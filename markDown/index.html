@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>EditorMD</title>
+        <!--<link rel="stylesheet" type="text/css" href="plug-ins/EditorMD/lib/codemirror/codemirror.min.css" />-->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="./EditorMD/editormd.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./EditorMD/css/editormd.css" />
+    </head>
+
+    <body>
+
+        <div id="editormd" style="min-height:800px"> 
+            <textarea style="display:block;">### Hello Editor.md !</textarea>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                var editor = editormd("editormd", {
+                    path: './EditorMD/lib/'
+                });
+
+                /*
+                // or
+                var editor = editormd({
+                    id   : "editormd",
+                    path : "../lib/"
+                });
+                */
+            });
+        </script>
+        </script>
+    </body>
+
+</html>
